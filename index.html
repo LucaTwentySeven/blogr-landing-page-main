@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="https://supraweb.dev/demos/blogr-landing-page-main/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/app.css">
+
+  <title>Frontend Mentor | [Blogr]</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="wrapper">
+        <a href="#"><img src="https://supraweb.dev/demos/blogr-landing-page-main/images/logo.svg" alt=""></a>
+        <div class="overlay"></div>
+        <nav class="navbar">
+          <svg class="menu-close" width="26" height="26" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M23.607.98l1.414 1.413L14.414 13l10.607 10.607-1.414 1.414L13 14.414 2.393 25.021.98 23.607 11.586 13 .98 2.393 2.393.98 13 11.586 23.607.98z"
+              fill="#fff" fill-rule="evenodd" />
+          </svg>
+          <ul class="menu">
+            <!-- <li class="menu-item"><a href="#">Home</a></li>
+            <li class="menu-item"><a href="#">About</a></li> -->
+            <li class="menu-item menu-item-has-children">
+              <a href="#" data-toggle="sub-menu">Product<svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                  width="10" height="7">
+                  <path fill="none" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4" />
+                </svg>
+              </a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="#">Overview</a></li>
+                <li class="menu-item"><a href="#">Pricing</a></li>
+                <li class="menu-item"><a href="#">Marketplace</a></li>
+                <li class="menu-item"><a href="#">Features</a></li>
+                <li class="menu-item"><a href="#">Integrations</a></li>
+              </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+              <a href="#" data-toggle="sub-menu">Company<svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                  width="10" height="7">
+                  <path fill="none" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4" />
+                </svg>
+              </a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="#">About</a></li>
+                <li class="menu-item"><a href="#">Team</a></li>
+                <li class="menu-item"><a href="#">Blog</a></li>
+                <li class="menu-item"><a href="#">Careers</a></li>
+              </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+              <a href="#" data-toggle="sub-menu">Connect<svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                  width="10" height="7">
+                  <path fill="none" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4" />
+                </svg></a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="#">Contact</a></li>
+                <li class="menu-item"><a href="#">Newsletter</a></li>
+                <li class="menu-item"><a href="#">LinkedIn</a></li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="#">Login</a></li>
+            <li class="menu-item"><a href="#">Sign Up</a></li>
+          </ul>
+        </nav>
+        <svg class="hamburger" width="32" height="18" xmlns="http://www.w3.org/2000/svg">
+          <g fill="#FFF" fill-rule="evenodd">
+            <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z" />
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="intro">
+      <h1>A modern<wbr> publishing platform</h1>
+      <p class="white">Grow your audience and build your online brand</p>
+      <div class="intro-buttons">
+        <a href="#" class="button primary">Start for Free</a>
+        <a href="#" class="button secondary">Learn More</a>
+      </div>
+    </div>
+  </header>
+  <section id="about">
+    <h3>Designed for the future</h3>
+    <div class="flex-column">
+      <div class="about-image-content">
+        <picture>
+          <source media="(min-width: 993px)"
+            srcset="https://supraweb.dev/demos/blogr-landing-page-main/images/illustration-editor-desktop.svg">
+          <img src="https://supraweb.dev/demos/blogr-landing-page-main/images/illustration-editor-mobile.svg" alt="">
+        </picture>
+      </div>
+      <div class="about-text-content">
+        <h3>Introducing an extensible editor</h3>
+        <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+          The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+          videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+          change the looks of a blog.</p>
+        <h3>Robust content management</h3>
+        <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog
+          by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="cta">
+    <div class="cta-block">
+      <div class="flex-column">
+        <div class="cta-image-content">
+          <img src="https://supraweb.dev/demos/blogr-landing-page-main/images/illustration-phones.svg" alt="">
+        </div>
+        <div class="cta-text-content">
+          <h3 class="white">State of the Art Infrastructure</h3>
+          <p class="white">With reliability and speed in mind, worldwide data centers provide the backbone for
+            ultra-fast
+            connectivity.
+            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="computer">
+    <div class="flex-column">
+      <div class="computer-image-content">
+        <picture>
+          <source media="(min-width: 993px)"
+            srcset="https://supraweb.dev/demos/blogr-landing-page-main/images/illustration-laptop-desktop.svg">
+          <img src="https://supraweb.dev/demos/blogr-landing-page-main/images/illustration-laptop-mobile.svg" alt="">
+        </picture>
+      </div>
+      <div class="computer-text-content">
+        <h3>Free, open, simple</h3>
+        <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports
+          features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+          and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+        <h3>Powerful tooling</h3>
+        <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a
+          breeze, but capable of producing even the most complicated sites.</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="flex-footer">
+      <div><a href="#"><img src="https://supraweb.dev/demos/blogr-landing-page-main/images/logo.svg" alt=""></a></div>
+      <div>
+        <p>Product</p>
+        <ul class="footer-menu">
+          <li><a href="">Overview</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Marketplace</a></li>
+          <li><a href="">Features</a></li>
+          <li><a href="">Integrations</a></li>
+        </ul>
+      </div>
+      <div>
+        <p>Company</p>
+        <ul class="footer-menu">
+          <li><a href="">About</a></li>
+          <li><a href="">Team</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <p>Connect</p>
+        <ul class="footer-menu">
+          <li><a href="">Contact</a></li>
+          <li><a href="">Newsletter</a></li>
+          <li><a href="">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const openedMenu = document.querySelector('.hamburger');
+    const closedMenu = document.querySelector('.menu-close');
+    const navbarMenu = document.querySelector('.navbar');
+    const menuOverlay = document.querySelector('.overlay');
+
+    // Open / Close / Close navbarMenu by click uutside
+    openedMenu.addEventListener('click', toggleMenu);
+    closedMenu.addEventListener('click', toggleMenu);
+    menuOverlay.addEventListener('click', toggleMenu);
+
+    // Toggle Menu
+    function toggleMenu() {
+      navbarMenu.classList.toggle('active');
+      menuOverlay.classList.toggle('active');
+      openedMenu.classList.toggle('disabled');
+      document.body.classList.toggle('scrolling');
+    }
+
+    navbarMenu.addEventListener('click', (event) => {
+      if (event.target.hasAttribute('data-toggle') && window.innerWidth <= 992) {
+        // Prevent anchor click behavior
+        event.preventDefault();
+        const menuItemHasChildren = event.target.parentElement;
+
+        // If menuItemHasChildren is expanded, it collapses
+        if (menuItemHasChildren.classList.contains('active')) {
+          collapseSubMenu();
+        } else {
+          // Collapse existing expanded menuItemHasChildren
+          if (navbarMenu.querySelector('.menu-item-has-children.active')) {
+            collapseSubMenu();
+          }
+          // Expand new menuItemHasChildren
+          menuItemHasChildren.classList.add('active');
+          const subMenu = menuItemHasChildren.querySelector('.sub-menu');
+          subMenu.style.maxHeight = subMenu.scrollHeight + 'px';
+        }
+      }
+    });
+
+    // Collapse sub-menu function
+    function collapseSubMenu() {
+      navbarMenu.querySelector('.menu-item-has-children.active .sub-menu').removeAttribute('style');
+      navbarMenu.querySelector('.menu-item-has-children.active').classList.remove('active');
+    }
+
+    // Fixed resize screen function
+    function resizeScreen() {
+      // If navbarMenu is Open, Close it
+      if (navbarMenu.classList.contains('active')) {
+        toggleMenu();
+      }
+
+      // If menuItemHasChildren is expanded, collapse it
+      if (navbarMenu.querySelector('.menu-item-has-children.active')) {
+        collapseSubMenu();
+      }
+    }
+
+    window.addEventListener('resize', () => {
+      if (this.innerWidth > 992) {
+        resizeScreen();
+      }
+    });
+
+  </script>
+
+  <div class="attribution">
+    <p>Challenge by&nbsp;<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    </p>
+    <p>Coded by&nbsp;<a href="https://supraweb.dev/" target="_blank">Łukasz Gąsiecki</a>.</p>
+  </div>
+</body>
+
+</html>
